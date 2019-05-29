@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ubication: MyString
+  category: MyString
+  item_code: MyString
+  description: MyText
+  unitary_cost: 
+  total_value: 
+
+two:
+  ubication: MyString
+  category: MyString
+  item_code: MyString
+  description: MyText
+  unitary_cost: 
+  total_value: 
