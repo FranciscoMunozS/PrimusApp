@@ -17,6 +17,5 @@
 //= require select2
 //= require select2_locale_es
 //= require custom
-//= require turbolinks
 //= require datatables
 //= require_tree .
