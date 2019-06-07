@@ -1,0 +1,5 @@
+current directory: /home/francisco/Documentos/Rails/PrimusApp/vendor/cache/ruby/2.6.0/gems/childprocess-1.0.1/ext
+/home/francisco/.rbenv/versions/2.6.1/bin/ruby mkrf_conf.rb
+
+current directory: /home/francisco/Documentos/Rails/PrimusApp/vendor/cache/ruby/2.6.0/gems/childprocess-1.0.1/ext
+/home/francisco/.rbenv/versions/2.6.1/bin/ruby -rrubygems /home/francisco/Documentos/Rails/PrimusApp/vendor/cache/ruby/2.6.0/gems/rake-12.3.2/exe/rake RUBYARCHDIR\=/home/francisco/Documentos/Rails/PrimusApp/vendor/cache/ruby/2.6.0/extensions/x86_64-linux/2.6.0-static/childprocess-1.0.1 RUBYLIBDIR\=/home/francisco/Documentos/Rails/PrimusApp/vendor/cache/ruby/2.6.0/extensions/x86_64-linux/2.6.0-static/childprocess-1.0.1

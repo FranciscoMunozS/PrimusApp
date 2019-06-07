@@ -1,0 +1,15 @@
+current directory: /home/francisco/Documentos/Rails/PrimusApp/vendor/cache/ruby/2.6.0/gems/bindex-0.7.0/ext/skiptrace
+/home/francisco/.rbenv/versions/2.6.1/bin/ruby -I /home/francisco/.rbenv/versions/2.6.1/lib/ruby/site_ruby/2.6.0 -r ./siteconf20190607-19720-1dfbmno.rb extconf.rb
+creating Makefile
+
+current directory: /home/francisco/Documentos/Rails/PrimusApp/vendor/cache/ruby/2.6.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /home/francisco/Documentos/Rails/PrimusApp/vendor/cache/ruby/2.6.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/cruby.so
+
+current directory: /home/francisco/Documentos/Rails/PrimusApp/vendor/cache/ruby/2.6.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20190607-19720-f918is/skiptrace
