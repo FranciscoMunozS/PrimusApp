@@ -16,6 +16,6 @@
 //= require bootstrap
 //= require select2
 //= require select2_locale_es
-//= require custom
 //= require datatables
+//= require custom
 //= require_tree .
