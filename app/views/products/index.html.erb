@@ -1,41 +1,58 @@
 <p id="notice"><%= notice %></p>
 
 <div class="row">
-  <div class="col-md-6">
-    <h1>Productos</h1>
-  </div>
-  <div class="col-md-6 text-right">
-    <%= link_to 'Agregar producto', new_product_path, class: 'btn btn-primary' %>
+  <div class="col-md-6 text-left">
+    <%= link_to 'Ingresar nuevo producto', new_product_path, class: 'btn btn-primary btn-sm' %>
   </div>
 </div>
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Ubicación</th>
-      <th>Categoria</th>
-      <th>Codigo item</th>
-      <th>Descripción</th>
-      <th>Valor unitario</th>
-      <th>Valor total</th>
-      <th colspan="3">Opciones</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @products.each do |product| %>
-      <tr>
-        <td><%= product.ubication %></td>
-        <td><%= product.category %></td>
-        <td><%= product.item_code %></td>
-        <td><%= product.description %></td>
-        <td><%= product.unitary_cost %></td>
-        <td><%= product.total_value %></td>
-        <td><%= link_to 'Ver', product %></td>
-        <td><%= link_to 'Editar', edit_product_path(product) %></td>
-        <td><%= link_to 'Eliminar', product, method: :delete, data: { confirm: 'Esta seguro?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
 <br>
+
+<div class="card shadow mb-4 border-left-primary">
+  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between font-weight-bold text-primary">
+      Productos
+    </div>
+  <div class="card-body">
+    <table class="table table-bordered text-center" id="dttb">
+      <thead>
+        <tr>
+          <th>Codigo item</th>
+          <th>Ubicación</th>
+          <th>Categoria</th>
+          <th>Descripción</th>
+          <th>Proveedor</th>
+          <th>Cantidad</th>
+          <th>Valor unitario</th>
+          <th>Valor total</th>
+          <th>Opciones</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @products.each do |product| %>
+          <tr>
+            <td><%= product.item_code %></td>
+            <td><%= product.ubication %></td>
+            <td><%= product.category %></td>    
+            <td><%= product.description %></td>
+            <td><%= product.provider.name %></td>
+            <td><%= product.quantity %></td>
+            <td><%= product.unitary_cost %></td>
+            <td><%= product.total_value %></td>
+            <td>
+              <%= link_to product, class: 'btn btn-primary btn-sm' do %>
+                <% icon('fas', 'eye', 'Ver') %>
+              <% end %>
+              <%= link_to edit_product_path(product), class: 'btn btn-success btn-sm' do %>
+                <% icon('fas', 'edit', 'Editar') %>
+              <% end %>
+              <%= link_to product, method: :delete, data: { confirm: 'Esta seguro?' }, class: 'btn btn-danger btn-sm' do %>
+                <% icon('fas', 'trash-alt', 'Eliminar') %>
+              <% end %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

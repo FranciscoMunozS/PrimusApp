@@ -15,7 +15,7 @@ class ProvidersController < ApplicationController
 
   # GET /providers/new
   def new
-    @provider = Provider.new
+    @provider = current_user.providers.build
   end
 
   # GET /providers/1/edit
@@ -25,7 +25,7 @@ class ProvidersController < ApplicationController
   # POST /providers
   # POST /providers.json
   def create
-    @provider = Provider.new(provider_params)
+    @provider = current_user.providers.build(provider_params)
 
     respond_to do |format|
       if @provider.save

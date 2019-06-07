@@ -3,10 +3,9 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="card">
+    <h3 class="card-header">Ingreso</h3>
     <div class="card-body">
       <div class="form-inputs">
-        <%= f.association :provider, label: 'Proveedor', include_blank: false %>
-
         <%= f.input :item_code, label: 'Codigo' %>
         <div class="row">
           <div class="col-md-6"><%= f.input :ubication, label: 'Ubicación' %></div>
@@ -24,6 +23,15 @@
       <div class="form-actions">
         <%= f.button :submit, class: 'btn btn-primary' %>
         <%= link_to 'Cancelar', root_path, class: 'btn btn-danger' %>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="card">
+    <h3 class="card-header">Despacho</h3>
+    <div class="card-body">
+      <div class="form-inputs">
+
       </div>
     </div>
   </div>

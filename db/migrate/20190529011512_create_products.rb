@@ -5,8 +5,8 @@ class CreateProducts < ActiveRecord::Migration[5.1]
       t.string :category
       t.string :item_code
       t.text :description
-      t.bigint :unitary_cost
-      t.bigint :total_value
+      t.integer :unitary_cost
+      t.integer :total_value
 
       t.timestamps
     end

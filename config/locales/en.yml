@@ -2,6 +2,16 @@ en:
   time:
     formats:
       chile: "%d/%m/%Y"
+  enumerize:
+    product:
+      destination:
+        beauchef_lab: "Laboratorio Beauchef"
+        maipu_lab: "Laboratorio Maipu"
+        panguipulli: "Panguipulli"
+        la_union: "La Unión"
+        paillaco: "Paillaco"
+      ubication:
+        warehouse: "Bodega"
   activerecord:
     errors:
       messages:
