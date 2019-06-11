@@ -1,4 +1,8 @@
 en:
+  enumerize:
+    product:
+      ubication:
+        warehouse: "Bodega"
   time:
     formats:
       chile: "%d/%m/%Y"
